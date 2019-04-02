@@ -4,7 +4,7 @@ min = 1/0;
 min_light = [0, 0, 0];
 for i = 0 : 0.1 : 2*pi
     figure(7);    
-    image_evaluated = Evaluation(image_albedo, normal_surface, normalize([sin(i) cos(i) 1],'norm'));
+    image_evaluated = Evaluation(image_albedo, normal_surface, normalize([sin(i) cos(i) cos(i)],'norm'));
     imshow(mat2gray(image_evaluated));
     residual = (image_albedo - image_evaluated).^2;
     difference = sum(sum(residual(:,:)));
