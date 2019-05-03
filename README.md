@@ -35,4 +35,4 @@ recunstruction
 
 This method can`t make good recunstruction result because we just estimate surface normal using SVD
 
-More details will be added
+More details will be added ( surface condition, lightsource condition, etc...)
